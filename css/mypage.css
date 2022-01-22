@@ -1,0 +1,111 @@
+@import "./global.css";
+
+/* 프로필 이미지 크기 및 위치 조정 */
+.user-component {
+    padding: 20px 10px;
+    flex-direction: column;
+}
+/* 프로필 이미지 스타일링 */
+.user-component__profile {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+/* 프로필 텍스트 스타일링 */
+.user-component__id {
+    padding-top: 0.3rem;
+    font-size: 1rem;
+}
+/* 전체를 감싸는 태그의 위치를 가운데로 조정 */
+.add-profile-btn {
+    background-color: gray;
+    width: 70px;
+    height: 70px;
+    font-size: 4rem;
+    font-weight: 100;
+    color: white;
+}
+/* 사진 여백 조정 */
+.continue-watching {
+    margin-bottom: 25px;
+    padding: 0 20px;
+    padding-bottom: 10px;
+}
+/* 리스트를 삭제 후 x축으로 스크롤  */
+.continue-watching__images {
+    list-style: none; /* 리스트 제거 */
+    display: flex;
+    overflow-x: auto; /* x축으로 스크롤 */
+}
+/* 사진 크기 조정 */
+.continue-watching__images img {
+    width: 200px;
+    height: 120px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* 이어보기 타이틀과 작품간의 간격을 조정 */
+.continue-watching__header {
+    margin-bottom: 15px;
+}
+.continue-watching__images li {
+    margin-left: 5px;
+}
+/* 사진과 텍스트를 감싸는 배경 만들기 */
+.continue-watching__card {
+    background-color: var(--darkpurple);
+    padding: 5px;
+    border-radius: 15px;
+}
+/* 사진과 텍스트 사이의 간격을 조절 */
+.continue-watching__title {
+    display: block; /* 사진과 텍스트 사이 간격 조정 */
+    margin: 2px 0;
+}
+/* 이미지 크기를 줄이기 */
+.wishlist__img {
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+}
+/* 경계선 및 헤더 타이틀 간격 지정 */
+.wishlist-header {
+    border-top: 1px solid var(--border-color);
+    padding: 15px;
+    margin-bottom: 10px;
+} 
+/* 찜한 목록 작품 사진 및 정보의 전체 간격을 조정 */
+.wishlist-item {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--darkpurple);
+    padding: 7px;
+    border-radius: 15px;
+}
+/* 작품 사진 및 정보 세부 간격 및 크기를 조정 */
+.wishlist-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+}
+.wishlist__title {
+    font-size: 1.2rem;
+}
+.wishlist__subtitle {
+    font-size: 0.9rem;
+}
+/* 아이콘을 스타일링 */
+.wishlist-play-btn {
+    border-color: var(--purple);
+    border-radius: 50%;
+    opacity: 0.9;
+    font-size: 3rem;
+}
+/* 내가 찜한 목록의 여백을 지정 */
+.wishlist {
+    padding: 0 20px 10px 20px;
+}
